@@ -26,6 +26,10 @@ function anagramGroups(words) {
   return Array.from(map.values());
 }
 
+module.exports = anagramGroups;
+
+// const words = ["east", "cars", "acre", "arcs", "teas", "eats", "race"];
+
 // var anagramGroups2 = function (strs) {
 //   const map = {};
 //   const primes = [
@@ -40,45 +44,42 @@ function anagramGroups(words) {
 //   });
 //   return Object.values(map);
 // };
-const words = ["east", "cars", "acre", "arcs", "teas", "eats", "race"];
-console.log(anagramGroups2(words));
-module.exports = anagramGroups;
 
-var groupAnagrams = function (strs) {
-  const map = new Map();
-  strs.forEach((word) => {
-    const sortedString1 = word.split("").sort().join("");
-    if (map.has(sortedString1)) {
-      map.get(sortedString1).push(word);
-    } else {
-      map.set(sortedString1, [word]);
-    }
-  });
-  return Array.from(map.values());
-};
+// var groupAnagrams = function (strs) {
+//   const map = new Map();
+//   strs.forEach((word) => {
+//     const sortedString1 = word.split("").sort().join("");
+//     if (map.has(sortedString1)) {
+//       map.get(sortedString1).push(word);
+//     } else {
+//       map.set(sortedString1, [word]);
+//     }
+//   });
+//   return Array.from(map.values());
+// };
 
-var groupAnagrams = function (strs) {
-  let map = new Map();
-  for (let word of strs) {
-    const sortedString1 = word.split("").sort().join("");
-    if (map.has(sortedString1)) {
-      map.set(sortedString1, [...map.get(sortedString1), word]);
-    } else {
-      map.set(sortedString1, [word]);
-    }
-  }
-  return Array.from(map.values());
-};
+// var groupAnagrams = function (strs) {
+//   let map = new Map();
+//   for (let word of strs) {
+//     const sortedString1 = word.split("").sort().join("");
+//     if (map.has(sortedString1)) {
+//       map.set(sortedString1, [...map.get(sortedString1), word]);
+//     } else {
+//       map.set(sortedString1, [word]);
+//     }
+//   }
+//   return Array.from(map.values());
+// };
 
-var groupAnagrams = function (strs) {
-  const map = new Map();
-  for (let word of strs) {
-    const sortedString1 = word.split("").sort().join("");
-    if (map.has(sortedString1)) {
-      map.get(sortedString1).push(word);
-    } else {
-      map.set(sortedString1, [word]);
-    }
-  }
-  return Array.from(map.values());
-};
+// var groupAnagrams = function (strs) {
+//   const map = new Map();
+//   for (let word of strs) {
+//     const sortedString1 = word.split("").sort().join("");
+//     if (map.has(sortedString1)) {
+//       map.get(sortedString1).push(word);
+//     } else {
+//       map.set(sortedString1, [word]);
+//     }
+//   }
+//   return Array.from(map.values());
+// };
