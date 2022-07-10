@@ -31,6 +31,8 @@ where `key` is the letter and `value` is the frequency of the letter
 If the letter occurs again, remove it, else add it.
 At the end, if there are more than 1 non-pair letter (i.e the map size is over 1), return false
 
-# find singe character
+# find single character
 
 Similar to anagram 2
+
+Return the value of the first key-value property of the map
