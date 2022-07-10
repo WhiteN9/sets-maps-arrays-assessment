@@ -8,7 +8,7 @@ Output: true if they are anagram.
 4. Do step 2 for string 'b'
 5. If result has the array of 'b', return true, else false
 
-# Anagram 2
+# Anagram 2 from stackoverflow
 Create a Hashmap where key - letter and value - frequencey of letter,
 for first string populate the hashmap (O(n))
 for second string decrement count and remove element from hashmap O(n)
