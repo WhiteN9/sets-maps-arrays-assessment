@@ -13,3 +13,7 @@ Create a Hashmap where key - letter and value - frequencey of letter,
 for first string populate the hashmap (O(n))
 for second string decrement count and remove element from hashmap O(n)
 if hashmap is empty, the string is anagram otherwise not.
+
+# Anagram groups
+For each word in the word array.
+    Use the same strategy as the solution 1 anagram problem.
