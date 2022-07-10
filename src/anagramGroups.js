@@ -4,7 +4,9 @@
  */
 function anagramGroups(words) {
   const map = new Map();
+  //O(n)
   words.forEach((word) => {
+    //O(nlogn)
     const sortedString1 = word.toLowerCase().split("").sort().join("");
     if (map.has(sortedString1)) {
       map.get(sortedString1).push(word);
